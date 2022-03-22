@@ -5,7 +5,5 @@ function App() {
     <div className ="flex">
       <SideBar />
     </div>
-  );
+  )
 }
-
-export default App;
