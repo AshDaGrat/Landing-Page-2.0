@@ -6,8 +6,13 @@
     .sidebar{
         @apply relative flex items-center justify-center align-middle
         h-12 w-20 mt-2 mb-2 mx-auto rounded-lg
-        
         text-white
         hover:text-blue-400;
     }
+}
+
+canvas{
+    position: fixed;
+    top : 0;
+    left : 0;
 }
