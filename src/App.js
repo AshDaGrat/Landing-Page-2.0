@@ -1,5 +1,5 @@
 import SideBar from "./sidebar";
-import About from "./About"
+import About from "./content"
 
 function App() {
   return(

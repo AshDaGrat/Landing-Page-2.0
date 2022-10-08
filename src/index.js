@@ -28,8 +28,8 @@ camera.position.setZ(5);
 camera.position.setY(1);
 
 function addStar() {
-  const geometry = new THREE.SphereGeometry(0.25, 24, 24);
-  const geometry2 = new THREE.BoxGeometry(0.5, 0.5, 0.5);
+  const geometry = new THREE.SphereGeometry(0.1, 24, 24);
+  const geometry2 = new THREE.BoxGeometry(0.2, 0.2, 0.2);
   const material = new THREE.MeshStandardMaterial({ color: 0xffffff});
   const material2 = new THREE.MeshBasicMaterial({ color: 0xffffff , wireframe: true });
   const star = new THREE.Mesh(geometry, material);
@@ -46,7 +46,7 @@ function addStar() {
   scene.add(box)
 }
 
-Array(200).fill().forEach(addStar);
+Array(1000).fill().forEach(addStar);
 
 
 const geometry = new THREE.BoxGeometry(1, 1, 1, 1, 1, 1)
@@ -56,6 +56,7 @@ const pointLight = new THREE.AmbientLight(0xFFFFFF)
 pointLight.position.set(5,5,5)
 //const gridhelper = new THREE.GridHelper(500,500)
 const controls = new OrbitControls(camera, renderer.domElement);
+raycaster = new THREE.Raycaster();
 
 scene.add(pointLight)
 
